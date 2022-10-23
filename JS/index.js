@@ -12,3 +12,5 @@ videoConteainer.addEventListener("click", function () {
   videoConteainer.classList.remove("no-after");
   playingButton.style.display = "flex";
 });
+
+document.getElementById("thisYear").innerHTML = new Date().getFullYear();
