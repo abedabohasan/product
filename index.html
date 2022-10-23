@@ -461,7 +461,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <form>
+              <form class="needs-validation" novalidate>
                 <h5>تواصل معنا</h5>
                 <input
                   type="text"
@@ -469,15 +469,24 @@
                   class="form-control"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
+                  required
                 />
+                <div class="invalid-feedback">من فضلك ادخل اسمك</div>
                 <input
                   type="email"
                   placeholder="البريد الاكتروني"
                   class="form-control my-3"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
+                  required
                 />
-                <textarea name="الرساله" placeholder="الرساله"></textarea>
+                <div class="invalid-feedback">من فضلك ادخل بريدا الكترونيا</div>
+                <textarea
+                  name="الرساله"
+                  placeholder="الرساله"
+                  required
+                ></textarea>
+                <div class="invalid-feedback">من فضلك ادخل رساله</div>
 
                 <button type="submit" class="btn my-3">
                   ارسال
