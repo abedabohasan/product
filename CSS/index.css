@@ -12,6 +12,9 @@
 }
 /* public end  */
 /* header start  */
+body {
+  padding: 20px !important;
+}
 header .container {
   height: 100vh;
 }
