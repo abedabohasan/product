@@ -247,6 +247,10 @@ header .product-img img {
   color: var(--main-color);
   background-color: #d09bff2b;
 }
+.accordion-button:focus {
+  border: none;
+  box-shadow: none;
+}
 /* Q & A end */
 /* watch video start  */
 .play-video {
