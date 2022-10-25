@@ -71,8 +71,8 @@ header .container {
 .description p {
   font-size: 18px;
   line-height: 32px;
-  margin-top: 40px;
-  margin-bottom: 50px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 .description .buttons a {
   padding: 20px 55px;
@@ -99,25 +99,12 @@ header .container {
 header .product-img {
   z-index: 2;
   position: relative;
-  padding-top: 150px;
-  padding-bottom: 55px;
+  display: flex;
+  justify-content: center;
 }
 header .product-img img {
-  max-width: 100%;
-}
-.product-img .price-lable {
-  position: absolute;
-  top: 105px;
-  right: -10px;
-  max-width: 100%;
-}
-.product-img .price-lable h5 {
-  display: inline;
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(45%, -80%);
-  color: white;
+  max-width: 80%;
+  border-radius: 20px;
 }
 /* header end  */
 /* main  start */
@@ -256,27 +243,12 @@ header .product-img img {
   margin-right: auto;
   margin-left: 0%;
 }
+.accordion-button:not(.collapsed) {
+  color: var(--main-color);
+  background-color: #d09bff2b;
+}
 /* Q & A end */
 /* watch video start  */
-/* header .container {
- 
-}
-.video-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-.video-container video {
-  min-width: 100%;
-  min-height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
 .play-video {
   height: 100vh;
   position: relative;
@@ -417,6 +389,9 @@ footer .social-media a {
   }
 }
 @media (max-width: 1200px) {
+  .description h1 {
+    margin-top: 20px;
+  }
   .description p {
     margin-top: 10px;
     margin-bottom: 15px;
@@ -435,7 +410,8 @@ footer .social-media a {
     text-align: center !important;
   }
   header .product-img > img {
-    max-width: 45%;
+    max-width: 40%;
+    margin-top: 100px;
   }
   .product-img .price-lable {
     right: 100px;
@@ -478,5 +454,13 @@ footer .social-media a {
   }
   .top-view {
     margin: 0%;
+  }
+  .cart-logo {
+    top: 1%;
+  }
+}
+@media (max-width: 576px) {
+  header .product-img > img {
+    margin-top: 0px;
   }
 }
