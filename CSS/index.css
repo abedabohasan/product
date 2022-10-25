@@ -12,7 +12,7 @@
 }
 /* public end  */
 /* header start  */
-body {
+section {
   padding: 20px !important;
 }
 header .container {
@@ -182,11 +182,6 @@ header .product-img img {
 }
 .card-body {
   padding: 0%;
-}
-.card:hover {
-  padding-top: 0px;
-  padding-bottom: 25px;
-  transition: 0.5s;
 }
 .card-body button:hover {
   background-color: var(--main-color) !important;
@@ -468,7 +463,7 @@ footer .social-media a {
 }
 @media (max-width: 576px) {
   header .product-img > img {
-    margin-top: 0px;
+    margin-top: -75px;
   }
   .description h1 {
     margin-top: 0px;
@@ -476,5 +471,8 @@ footer .social-media a {
   .description .buttons a {
     padding-top: 10px !important;
     padding-bottom: 10px !important ;
+  }
+  .pricing-plans h2 {
+    padding-bottom: 60px;
   }
 }
