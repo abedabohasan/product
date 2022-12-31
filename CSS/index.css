@@ -137,6 +137,9 @@ header .product-img img {
 .products .product .product-img {
   margin-left: 180px;
 }
+.product-img img {
+  border-radius: 20px;
+}
 .products .product .description h1 {
   margin-bottom: 60px;
   color: var(--main-color);
@@ -166,7 +169,7 @@ header .product-img img {
 /* main -> pricing-plan start  */
 .pricing-plans {
   background-color: #f7f7f7;
-  padding-bottom: 60px;
+  padding-bottom: 90px !important;
 }
 .pricing-plans h2 {
   padding-top: 50px;
@@ -219,7 +222,7 @@ header .product-img img {
 /* main -> pricing-plan end  */
 /* Q & A start */
 .QandA {
-  padding-bottom: 60px;
+  height: 500px;
 }
 .QandA > h2 {
   font-size: 30px;
@@ -439,6 +442,14 @@ footer .social-media a {
   .products .product-reversed .product-img {
     margin: 0%;
     margin-bottom: 30px;
+  }
+  .QandA {
+    height: 970px;
+  }
+
+  .accordion {
+    height: 150px;
+    margin: 30px 0;
   }
 }
 @media (max-width: 768px) {
